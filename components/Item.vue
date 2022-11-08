@@ -38,14 +38,15 @@ export default Vue.extend({
         display:flex;
         align-items: center;
         justify-content: space-between;
+        margin:2em 0;
         h2{
-            width:300px;
+            width:200px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
         }
         p{
-            width:300px;
+            width:200px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;

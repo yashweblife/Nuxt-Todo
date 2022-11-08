@@ -1,7 +1,7 @@
 <template>
     <section>
-        <ul v-for="item in list" :key="item.id">
-            <ItemVue :item="item" @item-deleted="deleteItem" />
+        <ul>
+            <ItemVue v-for="item in list" :key="item.id" :item="item" @item-deleted="deleteItem" />
         </ul>
         <nav>
             <input type="text" v-model="newItemInput">
@@ -83,6 +83,21 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    ul{
+        width:500px;
+        height: 500px;
+        overflow-y: auto;
+        padding: 1em;
+        box-shadow: inset 0 -1em 1em -1em rgba(0,0,0,0.1), 0 0 1em 0 rgba(0,0,0,0.5);
+        border-radius: 1em;
+        &::-webkit-scrollbar{
+            width:0.5em;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: rgb(26, 187, 171);
+            border-radius: 1em;
+        }
+    }
     >nav{
         width:300px;
         display: flex;
