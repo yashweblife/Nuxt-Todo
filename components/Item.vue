@@ -31,6 +31,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
     li{
         list-style-type: none;
+        border:0.2em solid white;
         border-left: 0.2em solid rgb(26, 187, 171);
         padding:1em;
         box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
