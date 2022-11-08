@@ -1,5 +1,6 @@
 <template>
     <section>
+        
         <ul>
             <ItemVue v-for="item in list" :key="item.id" :item="item" @item-deleted="deleteItem" />
         </ul>
@@ -13,13 +14,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import ItemVue from '~/components/Item.vue';
+import { ItemInterface } from '~/interfaces';
 
-interface ItemInterface {
-    title: string,
-    info: string,
-    id: number,
-    marked: boolean
-}
 
 export default Vue.extend({
     data: () => {
