@@ -35,7 +35,7 @@ export default Vue.extend({
         border-left: 0.2em solid rgb(26, 187, 171);
         padding:1em;
         box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
-        border-radius: 1em;
+        border-radius: 5em;
         display:flex;
         align-items: center;
         justify-content: space-between;
@@ -45,12 +45,14 @@ export default Vue.extend({
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            margin:0;
         }
         p{
             width:200px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            margin:0;
         }
         nav{
             width:200px;
@@ -63,8 +65,11 @@ export default Vue.extend({
                 cursor:pointer;
                 background-color: rgb(26, 187, 171);
                 padding: 0.5em;
-                border-radius: 1em;
+                border-radius: 50%;
                 font-size: 1em;
+                box-shadow: 0 0 1em 0 rgba(0,0,0,0.3);
+                aspect-ratio: 1/1;
+                color:white;
             }
         }
     }
